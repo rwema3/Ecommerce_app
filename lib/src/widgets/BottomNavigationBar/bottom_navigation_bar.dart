@@ -1,9 +1,3 @@
-    Listenable.merge([_xController, _yController]).addListener(() {
-      setState(() {});
-    });
-
-    super.initState();
-  }
 
   @override
   void didChangeDependencies() {
