@@ -1,18 +1,6 @@
   @override
   void dispose() {
     _xController.dispose();
-    _yController.value = 1.0;
-    _xController.animateTo(
-        _indexToPosition(index) / MediaQuery.of(context).size.width,
-        duration: Duration(milliseconds: 620));
-    Future.delayed(
-      Duration(milliseconds: 500),
-      () {
-        _yController.animateTo(1.0, duration: Duration(milliseconds: 1200));
-      },
-    );
-    _yController.animateTo(0.0, duration: Duration(milliseconds: 300));
-  }
 
   @override
   Widget build(BuildContext context) {
