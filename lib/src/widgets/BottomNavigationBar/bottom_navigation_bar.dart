@@ -1,23 +1,6 @@
   @override
   void dispose() {
     _xController.dispose();
-
-  @override
-  Widget build(BuildContext context) {
-    final appSize = MediaQuery.of(context).size;
-    final height = 60.0;
-    return Container(
-      width: appSize.width,
-      height: 60,
-      child: Stack(
-        children: [
-          Positioned(
-            left: 0,
-            bottom: 0,
-            width: appSize.width,
-            height: height - 10,
-            child: _buildBackground(),
-          ),
           Positioned(
             left: (appSize.width - _getButtonContainerWidth()) / 2,
             top: 0,
