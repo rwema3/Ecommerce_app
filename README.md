@@ -43,7 +43,7 @@ lib
 ```
 ## Pull Requests
 
-I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request.
+I welcome and encourage all pull requests. It usually will take me like 24-48 hours to respond to any issue or request.
 
 ## Flutter plugins
 Plugin Name        | Stars        
