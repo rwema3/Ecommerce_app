@@ -14,13 +14,3 @@ class ProductCard extends StatelessWidget {
 //   _ProductCardState createState() => _ProductCardState();
 // }
 
-// class _ProductCardState extends State<ProductCard> {
-//   Product product;
-//   @override
-//   void initState() {
-//     product = widget.product;
-//     super.initState();
-//   }
-
-  @override
-  Widget build(BuildContext context) {
