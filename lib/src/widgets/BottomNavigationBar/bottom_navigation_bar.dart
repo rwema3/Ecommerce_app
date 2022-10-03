@@ -1,9 +1,6 @@
   @override
   void dispose() {
     _xController.dispose();
-    _yController.dispose();
-    super.dispose();
-  }
 
   Widget _buildBackground() {
     final inCurve = ElasticOutCurve(0.38);
