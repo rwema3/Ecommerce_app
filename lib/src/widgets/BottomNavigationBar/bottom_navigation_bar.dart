@@ -1,16 +1,3 @@
-
-  double _indexToPosition(int index) {
-    // Calculate button positions based off of their
-    // index (works with `MainAxisAlignment.spaceAround`)
-    const buttonCount = 4.0;
-    final appWidth = MediaQuery.of(context).size.width;
-    final buttonsWidth = _getButtonContainerWidth();
-    final startX = (appWidth - buttonsWidth) / 2;
-    return startX +
-        index.toDouble() * buttonsWidth / buttonCount +
-        buttonsWidth / (buttonCount * 2.0);
-  }
-
   @override
   void dispose() {
     _xController.dispose();
