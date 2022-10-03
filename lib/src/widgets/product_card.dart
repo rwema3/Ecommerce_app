@@ -77,11 +77,4 @@ class ProductCard extends StatelessWidget {
                   fontSize: product.isSelected ? 14 : 12,
                   color: LightColor.orange,
                 ),
-                TitleText(
-                  text: product.price.toString(),
-                  fontSize: product.isSelected ? 18 : 16,
-                ),
-              ],
-            ),
-          ],
  
