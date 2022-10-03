@@ -1,13 +1,3 @@
-class CustomBottomNavigationBar extends StatefulWidget {
-  final Function(int) onIconPresedCallback;
-  CustomBottomNavigationBar({Key key, this.onIconPresedCallback})
-      : super(key: key);
-
-  @override
-  _CustomBottomNavigationBarState createState() =>
-      _CustomBottomNavigationBarState();
-}
-
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar>
     with TickerProviderStateMixin {
   int _selectedIndex = 0;
