@@ -38,15 +38,3 @@ class ProductCard extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: <Widget>[
-            Positioned(
-              left: 0,
-              top: 0,
-              child: IconButton(
-                icon: Icon(
-                  product.isliked ? Icons.favorite : Icons.favorite_border,
-                  color:
-                      product.isliked ? LightColor.red : LightColor.iconColor,
-                ),
-                onPressed: () {},
-              ),
-            ),
