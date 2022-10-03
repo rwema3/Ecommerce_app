@@ -4,23 +4,6 @@
     _yController.dispose();
     super.dispose();
   }
-        child: AnimatedContainer(
-          duration: Duration(milliseconds: 500),
-          alignment: isEnable ? Alignment.topCenter : Alignment.center,
-          child: AnimatedContainer(
-              height: isEnable ? 40 : 20,
-              duration: Duration(milliseconds: 300),
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: isEnable ? LightColor.orange : Colors.white,
-                  boxShadow: <BoxShadow>[
-                    BoxShadow(
-                      color: isEnable ? Color(0xfffeece2) : Colors.white,
-                      blurRadius: 10,
-                      spreadRadius: 5,
-                      offset: Offset(5, 5),
-                    ),
-                  ],
                   shape: BoxShape.circle),
               child: Opacity(
                 opacity: isEnable ? _yController.value : 1,
