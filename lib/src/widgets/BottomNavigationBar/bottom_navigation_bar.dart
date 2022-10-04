@@ -4,6 +4,14 @@
     _yController.dispose();
     super.dispose();
   }
+
+  Widget _icon(IconData icon, bool isEnable, int index) {
+    return Expanded(
+      child: InkWell(
+        borderRadius: BorderRadius.all(Radius.circular(50)),
+        onTap: () {
+          _handlePressed(index);
+        },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 500),
           alignment: isEnable ? Alignment.topCenter : Alignment.center,
