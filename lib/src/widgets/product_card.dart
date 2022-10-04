@@ -24,3 +24,17 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: LightColor.background,
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+        boxShadow: <BoxShadow>[
+          BoxShadow(color: Color(0xfff8f8f8), blurRadius: 15, spreadRadius: 10),
+        ],
+      ),
+      margin: EdgeInsets.symmetric(vertical: !product.isSelected ? 20 : 0),
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
