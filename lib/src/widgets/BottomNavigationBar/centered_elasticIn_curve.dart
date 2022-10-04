@@ -1,10 +1,5 @@
 import 'dart:math' as math;
 
-import 'package:flutter/material.dart';
-
-class CenteredElasticOutCurve extends Curve {
-  final double period;
-
   CenteredElasticOutCurve([this.period = 0.4]);
 
   @override
