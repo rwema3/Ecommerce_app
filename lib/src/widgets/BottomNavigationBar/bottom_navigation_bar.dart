@@ -18,7 +18,12 @@
     );
   }
 
-  
+  double _getButtonContainerWidth() {
+    double width = MediaQuery.of(context).size.width;
+    if (width > 400.0) {
+      width = 400.0;
+    }
+    return width;
   }
 
   void _handlePressed(int index) {
