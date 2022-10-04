@@ -1,6 +1,15 @@
   @override
   void dispose() {
     _xController.dispose();
+          _xController.value * MediaQuery.of(context).size.width,
+          Tween<double>(
+            begin: Curves.easeInExpo.transform(_yController.value),
+            end: inCurve.transform(_yController.value),
+          ).transform(_yController.velocity.sign * 0.5 + 0.5),
+          Theme.of(context).backgroundColor),
+    );
+  }
+
   double _getButtonContainerWidth() {
     double width = MediaQuery.of(context).size.width;
     if (width > 400.0) {
