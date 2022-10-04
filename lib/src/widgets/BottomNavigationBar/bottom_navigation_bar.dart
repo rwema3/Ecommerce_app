@@ -1,4 +1,13 @@
 
+  @override
+  void didChangeDependencies() {
+    _xController.value =
+        _indexToPosition(_selectedIndex) / MediaQuery.of(context).size.width;
+    _yController.value = 1.0;
+
+    super.didChangeDependencies();
+  }
+
   double _indexToPosition(int index) {
     // Calculate button positions based off of their
     // index (works with `MainAxisAlignment.spaceAround`)
