@@ -1,6 +1,21 @@
   @override
   void dispose() {
     _xController.dispose();
+  double _getButtonContainerWidth() {
+    double width = MediaQuery.of(context).size.width;
+    if (width > 400.0) {
+      width = 400.0;
+    }
+    return width;
+  }
+
+  void _handlePressed(int index) {
+    if (_selectedIndex == index || _xController.isAnimating) return;
+    widget.onIconPresedCallback(index);
+    setState(() {
+      _selectedIndex = index;
+    });
+
     _yController.value = 1.0;
     _xController.animateTo(
         _indexToPosition(index) / MediaQuery.of(context).size.width,
