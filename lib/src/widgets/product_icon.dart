@@ -5,7 +5,14 @@
               padding: AppTheme.hPadding,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                borderRadius: B
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                color: model.isSelected
+                    ? LightColor.background
+                    : Colors.transparent,
+                border: Border.all(
+                  color: model.isSelected ? LightColor.orange : LightColor.grey,
+                  width: model.isSelected ? 2 : 1,
+                ),
                 boxShadow: <BoxShadow>[
                   BoxShadow(
                     color: model.isSelected ? Color(0xfffbf2ef) : Colors.white,
