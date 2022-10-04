@@ -1,3 +1,8 @@
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                color: model.isSelected
+                    ? LightColor.background
+                    : Colors.transparent,
                 border: Border.all(
                   color: model.isSelected ? LightColor.orange : LightColor.grey,
                   width: model.isSelected ? 2 : 1,
