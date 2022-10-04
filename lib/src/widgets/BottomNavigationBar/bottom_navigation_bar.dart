@@ -18,14 +18,6 @@
     );
   }
 
-  
-  }
-
-  void _handlePressed(int index) {
-    if (_selectedIndex == index || _xController.isAnimating) return;
-    widget.onIconPresedCallback(index);
-    setState(() {
-      _selectedIndex = index;
     });
 
     _yController.value = 1.0;
