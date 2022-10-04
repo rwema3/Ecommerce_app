@@ -50,3 +50,12 @@ class ProductCard extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                SizedBox(height: product.isSelected ? 15 : 0),
+                Expanded(
+                  child: Stack(
+                    alignment: Alignment.center,
+ 
