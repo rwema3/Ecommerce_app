@@ -1,6 +1,4 @@
-        ? Container(width: 5)
-        : Container(
-            ).ripple(
+).ripple(
               () {
                 onSelected(model);
               },
