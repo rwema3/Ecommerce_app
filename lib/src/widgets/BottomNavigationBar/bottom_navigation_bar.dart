@@ -1,6 +1,14 @@
   @override
   void dispose() {
     _xController.dispose();
+    _yController.dispose();
+    super.dispose();
+  }
+
+  Widget _buildBackground() {
+    final inCurve = ElasticOutCurve(0.38);
+    return CustomPaint(
+      painter: BackgroundCurvePainter(
           _xController.value * MediaQuery.of(context).size.width,
           Tween<double>(
             begin: Curves.easeInExpo.transform(_yController.value),
