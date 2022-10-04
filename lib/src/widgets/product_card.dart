@@ -58,4 +58,14 @@ class ProductCard extends StatelessWidget {
                 Expanded(
                   child: Stack(
                     alignment: Alignment.center,
+                    children: <Widget>[
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundColor: LightColor.orange.withAlpha(40),
+                      ),
+                      Image.asset(product.image)
+                    ],
+                  ),
+                ),
+                // SizedBox(height: 5),
  
