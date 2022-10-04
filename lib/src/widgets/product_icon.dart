@@ -1,3 +1,12 @@
+class ProductIcon extends StatelessWidget {
+  // final String imagePath;
+  // final String text;
+  final ValueChanged<Category> onSelected;
+  final Category model;
+  ProductIcon({Key key, this.model, this.onSelected}) : super(key: key);
+
+  Widget build(BuildContext context) {
+    return model.id == null
         ? Container(width: 5)
         : Container(
             margin: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
