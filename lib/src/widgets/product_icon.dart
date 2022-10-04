@@ -1,3 +1,6 @@
+            child: Container(
+              padding: AppTheme.hPadding,
+              alignment: Alignment.center,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(10)),
                 color: model.isSelected
