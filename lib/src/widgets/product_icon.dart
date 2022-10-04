@@ -1,6 +1,11 @@
         ? Container(width: 5)
         : Container(
-            
+            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+            child: Container(
+              padding: AppTheme.hPadding,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: B
                 boxShadow: <BoxShadow>[
                   BoxShadow(
                     color: model.isSelected ? Color(0xfffbf2ef) : Colors.white,
