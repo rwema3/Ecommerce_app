@@ -1,3 +1,10 @@
+
+class LinearPointCurve extends Curve {
+  final double pIn;
+  final double pOut;
+
+  LinearPointCurve(this.pIn, this.pOut);
+
   @override
   double transform(double x) {
     // Just a simple bit of linear interpolation math
