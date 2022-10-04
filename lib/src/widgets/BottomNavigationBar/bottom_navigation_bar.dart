@@ -1,3 +1,6 @@
+class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar>
+    with TickerProviderStateMixin {
+  int _selectedIndex = 0;
 
   AnimationController _xController;
   AnimationController _yController;
