@@ -4,6 +4,18 @@
     _yController.dispose();
     super.dispose();
   }
+                  shape: BoxShape.circle),
+              child: Opacity(
+                opacity: isEnable ? _yController.value : 1,
+                child: Icon(icon,
+                    color: isEnable
+                        ? LightColor.background
+                        : Theme.of(context).iconTheme.color),
+              )),
+        ),
+      ),
+    );
+  }
 
   Widget _buildBackground() {
     final inCurve = ElasticOutCurve(0.38);
