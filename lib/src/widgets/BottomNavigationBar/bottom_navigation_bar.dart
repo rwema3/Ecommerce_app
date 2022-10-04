@@ -1,3 +1,13 @@
+
+  AnimationController _xController;
+  AnimationController _yController;
+  @override
+  void initState() {
+    _xController = AnimationController(
+        vsync: this, animationBehavior: AnimationBehavior.preserve);
+    _yController = AnimationController(
+        vsync: this, animationBehavior: AnimationBehavior.preserve);
+
     Listenable.merge([_xController, _yController]).addListener(() {
       setState(() {});
     });
