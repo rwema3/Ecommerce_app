@@ -1,9 +1,3 @@
-
-  Widget build(BuildContext context) {
-    return model.id == null
-        ? Container(width: 5)
-        : Container(
-            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
             child: Container(
               padding: AppTheme.hPadding,
               alignment: Alignment.center,
