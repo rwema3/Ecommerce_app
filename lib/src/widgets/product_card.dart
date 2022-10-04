@@ -84,4 +84,7 @@ class ProductCard extends StatelessWidget {
               ],
             ),
           ],
+        ),
+      ).ripple(() {
+        Navigator.of(context).pushNamed('/detail');
  
